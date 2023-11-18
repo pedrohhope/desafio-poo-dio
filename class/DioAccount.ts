@@ -9,11 +9,11 @@ export abstract class DioAccount {
     this.accountNumber = accountNumber
   }
 
-  public getName = (): string => {
+  protected getName = (): string => {
     return this.name
   }
 
-  public addBalance = (balance: number): void => {
+  protected addBalance = (balance: number): void => {
     this.balance = this.balance + balance
   }
 
@@ -31,7 +31,7 @@ export abstract class DioAccount {
     }
   }
 
-  public getBalance = (): number => {
+  protected getBalance = (): number => {
     return this.balance
   }
 
@@ -43,7 +43,7 @@ export abstract class DioAccount {
     return true
   }
 
-  public validateStatus = (): boolean => {
+  protected validateStatus = (): boolean => {
     if (this.status) {
       return this.status;
     }

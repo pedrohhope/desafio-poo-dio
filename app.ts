@@ -22,3 +22,4 @@ console.log(companyAccount)
 companyAccount.getLoan(200)
 console.log('Estado após o empréstimo: ', companyAccount)
 console.log(companyAccount)
+
